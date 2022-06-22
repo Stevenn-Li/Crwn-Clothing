@@ -6,7 +6,7 @@ const Home = () => {
   return(
     <div>
       <Outlet/>
-      <Directory/>
+      <Directory />
       
     </div>
   );
