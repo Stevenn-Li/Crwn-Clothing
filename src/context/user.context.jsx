@@ -1,6 +1,8 @@
 import { createContext, useState, useEffect, useReducer } from 'react';
 import { onAuthStateChangedListener, signOutUser, createUserDocFromAuth } from '../utils/firebase/firebase.utils';
 import { createAction } from '../utils/reducer/reducer.util';
+
+/*
 export const UserContext = createContext({
     currentUser: null,
     setCurrentUser: () => null,
@@ -30,7 +32,7 @@ export const INITIAL_STATE = {
     currentUser: null,
 
 }
-/*
+
 export const UserProvider = ({children}) => {
     //const [currentUser, setCurrentUser] = useState(null);
     const [state, dispatch] = useReducer(userReducer, INITIAL_STATE);
